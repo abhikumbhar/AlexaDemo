@@ -110,7 +110,7 @@ public static void main(final String[] args) throws Exception {
     context.setContextPath("/");
     server.setHandler(context);
     context.addServlet(new ServletHolder(createServlet(new HelloWorldSpeechlet())), "/hello");
-    
+    System.out.println("################################password="+System.getProperty("javax.net.ssl.keyStorePassword"));
     System.out.println("##############################disableRequestSignatureCheck="+System.getProperty("com.amazon.speech.speechlet.servlet.disableRequestSignatureCheck"));
     server.start();
     server.join();
