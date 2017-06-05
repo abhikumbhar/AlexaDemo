@@ -82,7 +82,8 @@ public static void main(final String[] args) throws Exception {
     
     SslContextFactory sslContextFactory = sslConnectionFactory.getSslContextFactory();
     //sslContextFactory.setKeyStorePath("./MyNewJks.jks");
-    sslContextFactory.setKeyStorePath("/MyNewJks.jks");
+    sslContextFactory.setKeyStorePath("src/main/resources/MyNewJks.jks");
+    //sslContextFactory.setKeyStorePath("C:/Users/abhijitku/Documents/cert/MyNewJks.jks");
 
     sslContextFactory.setKeyStorePassword(System.getProperty("javax.net.ssl.keyStorePassword"));
     sslContextFactory.setIncludeCipherSuites(Sdk.SUPPORTED_CIPHER_SUITES);
