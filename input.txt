@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products uri = "http://api-cte-ext.digitalriver.com/v1/shoppers/me/products">
+    <product uri = "http://api-cte-ext.digitalriver.com/v1/shoppers/me/products/332355400">
+        <displayName>aaa Test Product</displayName>
+        <thumbnailImage>http://drh-cte-ora.img.digitalriver.com/Storefront/Company/drprosis/images/product/thumbnail/tn_burns.jpg</thumbnailImage>
+        <pricing uri = "http://api-cte-ext.digitalriver.com/v1/shoppers/me/products/332355400/pricing">
+            <formattedListPrice>$10.00</formattedListPrice>
+            <formattedSalePriceWithQuantity>$5.00</formattedSalePriceWithQuantity>
+        </pricing>
+        <addProductToCart cartUri = "http://api-cte-ext.digitalriver.com/v1/shoppers/me/carts/active?productId=332355400" uri = "http://api-cte-ext.digitalriver.com/v1/shoppers/me/carts/active/line-items?productId=332355400"/>
+    </product>
+    <product uri = "http://api-cte-ext.digitalriver.com/v1/shoppers/me/products/5073603100">
+        <displayName>OFI-DRR-Prod1</displayName>
+        <thumbnailImage/>
+        <pricing uri = "http://api-cte-ext.digitalrive
+r.com/v1/shoppers/me/products/5073603100/pricing">
+            <formattedListPrice>$10.00</formattedListPrice>
+            <formattedSalePriceWithQuantity>$10.00</formattedSalePriceWithQuantity>
+        </pricing>
+        <addProductToCart cartUri = "http://api-cte-ext.digitalriver.com/v1/shoppers/me/carts/active?productId=5073603100" uri = "http://api-cte-ext.digitalriver.com/v1/shoppers/me/carts/active/line-items?productId=5073603100"/>
+    </product>
+    <product uri = "http://api-cte-ext.digitalriver.com/v1/shoppers/me/products/5073603200">
+        <displayName>OFI-DRR-Prod2</displayName>
+        <thumbnailImage/>
+        <pricing uri = "http://api-cte-ext.digitalriver.com/v1/shoppers/me/products/5073603200/pricing">
+            <formattedListPrice>$10.00</formattedListPrice>
+            <formattedSalePriceWithQuantity>$10.00</formattedSalePriceWithQuantity>
+        </pricing>
+        <a ddProductToCartcartUri = "http://api-cte-ext.digitalriver.com/v1/shoppers/me/carts/active?productId=5073603200" uri = "http://api-cte-ext.digitalriver.com/v1/shoppers/me/carts/active/line-items?productId=5073603200"/>
+    </product>
+    <totalResults>3</totalResults>
+    <totalResultPages>1</totalResultPages>
+</products>
