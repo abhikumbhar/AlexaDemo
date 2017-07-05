@@ -81,11 +81,13 @@ public static void main(final String[] args) throws Exception {
     System.out.println("SSL protocol="+sslConnectionFactory.getProtocol());
     
     SslContextFactory sslContextFactory = sslConnectionFactory.getSslContextFactory();
-    //sslContextFactory.setKeyStorePath("./MyNewJks.jks");
-    sslContextFactory.setKeyStorePath("src/main/resources/MyNewJks.jks");
-    //sslContextFactory.setKeyStorePath("C:/Users/abhijitku/Documents/cert/MyNewJks.jks");
+    
+   // sslContextFactory.setKeyStorePath("src/main/resources/MyNewJks.jks");
+    sslContextFactory.setKeyStorePath("./MyNewJks.jks");
+    
 
-    sslContextFactory.setKeyStorePassword(System.getProperty("javax.net.ssl.keyStorePassword"));
+    //sslContextFactory.setKeyStorePassword(System.getProperty("javax.net.ssl.keyStorePassword"));
+    sslContextFactory.setKeyStorePassword("test123");
     sslContextFactory.setIncludeCipherSuites(Sdk.SUPPORTED_CIPHER_SUITES);
     
     HttpConfiguration httpConf = new HttpConfiguration();
@@ -110,8 +112,6 @@ public static void main(final String[] args) throws Exception {
     context.setContextPath("/");
     server.setHandler(context);
     context.addServlet(new ServletHolder(createServlet(new HelloWorldSpeechlet())), "/hello");
-    System.out.println("################################password="+System.getProperty("javax.net.ssl.keyStorePassword"));
-    System.out.println("##############################disableRequestSignatureCheck="+System.getProperty("com.amazon.speech.speechlet.servlet.disableRequestSignatureCheck"));
     server.start();
     server.join();
 }
